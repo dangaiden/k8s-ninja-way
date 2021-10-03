@@ -7,13 +7,18 @@ WORKDIR /usr/bin
 RUN apt-get update && \
         apt-get install -y \
         curl \
+        wget \
         python3 \
         apt-transport-https \
         ca-certificates \
         gnupg \
+        tmux \
 && rm -rf /var/lib/apt/lists/*
 
-CMD ["/bin/bash","/usr/bin/gcloud.sh"]
+CMD ["/usr/bin/gcloud.sh"]
+#CMD ["sleep", "infinity"]
 
-# docker build -t jumpbox .
+# docker rm jump && docker build -t jumpbox .
 # docker run --name jump -it --entrypoint /bin/bash jumpbox
+# docker run --name jump -dt jumpbox
+# docker attach

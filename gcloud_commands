@@ -1,0 +1,8 @@
+# Initialize
+gcloud init
+# Execute and log into your GCP account
+gcloud auth login
+# Config your region (cheapest one)
+gcloud config set compute/region us-west1
+#  Config your zone (cheapest one)
+gcloud config set compute/zone us-west1-c
