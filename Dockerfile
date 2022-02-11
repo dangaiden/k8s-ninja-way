@@ -20,5 +20,3 @@ CMD ["/usr/bin/gcloud.sh"]
 
 # docker rm jump && docker build -t jumpbox .
 # docker run --name jump -it --entrypoint /bin/bash jumpbox
-# docker run --name jump -dt jumpbox
-# docker attach
