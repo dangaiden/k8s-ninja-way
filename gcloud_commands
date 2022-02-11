@@ -6,3 +6,8 @@ gcloud auth login
 gcloud config set compute/region us-west1
 #  Config your zone (cheapest one)
 gcloud config set compute/zone us-west1-c
+
+
+
+
+##Modify another thing just to test things on Git!!!
